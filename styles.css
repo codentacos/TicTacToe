@@ -2,11 +2,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(#4b63fd, rgba(23, 110, 161, 0.9)) no-repeat;
+    height: 100vh;
+}
+
 h1 {
     text-align: center;
 }
 .container {
-    background: red;
+    background: #000;
+    border: 10px solid black;
+    border-radius: 3px;
     display: grid;
     grid-gap: 10px;
     grid-template-areas: 
@@ -14,6 +21,7 @@ h1 {
         "d4 d5 d6"
         "d7 d8 d9";
     margin: auto;
+    opacity: .7;
     width: 600px;
 }
 
