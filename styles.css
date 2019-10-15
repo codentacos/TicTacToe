@@ -1,0 +1,10 @@
+.behind-board {
+    background: red;
+}
+
+.box {
+    background: #000;
+    color: #fff;
+    height: 1rem;
+    margin: 5px;
+}
