@@ -1,3 +1,6 @@
+/* ////////////////////////////////////////////////////
+    THIS APPLICATION IS INTENTIONALLY NON-RESPONSIVE
+/////////////////////////////////////////////////////// */
 * {
     box-sizing: border-box;
 }
@@ -7,10 +10,43 @@ body {
     height: 100vh;
 }
 
+.view-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100px 1fr;
+    padding: 15px;
+}
+
 h1 {
+    font-size: 2.5em;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     text-align: center;
 }
-.container {
+
+.game-info {
+    /* GAME INFORMATION */
+    background: #ddd;
+    border: 2px solid black;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.btn-new {
+    /* NEW GAME BUTTON */
+    background: #4b63fd;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: none;
+    padding: 0 15px;
+}
+
+.btn-new:hover {
+    background: rgba(23, 110, 161, 0.9);
+}
+
+.container { 
+    /* GAME BOARD */
     background: #000;
     border: 10px solid black;
     border-radius: 3px;
@@ -21,13 +57,42 @@ h1 {
         "d4 d5 d6"
         "d7 d8 d9";
     margin: auto;
-    opacity: .7;
     width: 600px;
 }
 
 .box {
+    /* INDIVIDUAL PLAY SPACE */
     background: #ddd;
-    /* color: #fff; */
     height: 180px;
     width: 100%;
+}
+
+/* .player-X,
+.player-O {
+    position: absolute; */
+/* } */
+
+
+.active-player {
+    background: crimson;
+    margin: auto;
+    width: 250px;
+}
+
+#player-X {
+    /* display: none; */
+}
+
+#player-O {
+    display: none;
+}
+
+.play-x {
+    background-image: url(img/X-icon.svg);
+    background-size: cover;
+}
+
+.play-o {
+    background-image: url(img/O-icon.svg);
+    background-size: cover;
 }

@@ -8,21 +8,36 @@
 </head>
 
 <body>
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-        <!-- Top Row -->
-        <span class="d1 box">Box 1</span>
-        <span class="d2 box">Box 2</span>
-        <span class="d3 box">Box 3</span>
+    <div class="view-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="game-info">
+            <!-- Game active player, rules and new game button -->
+            <h2>Active Player:</h2>
+            <h3 id="player-X" class="active-player">Player X</h3>
+            <h3 id="player-O" class="active-player">Player O</h3>
 
-        <!-- Middle Row -->
-        <span class="d4 box">Box 4</span>
-        <span class="d5 box">Box 5</span>
-        <span class="d6 box">Box 6</span>
+            <h2>Rules:</h2>
+            <p>Click a sqare to place your mark</p>
+            <p>If you get 3 marks in a row you win the game!</p>
 
-        <!-- Bottom Row -->
-        <span class="d7 box">Box 7</span>
-        <span class="d8 box">Box 8</span>
-        <span class="d9 box">Box 9</span>
+            <button class="btn-new">New Game</button>
+        </div>
+
+        <div class="container">
+            <!-- Top Row -->
+            <span class="d1 box play-x">Box 1</span>
+            <span class="d2 box play-x">Box 2</span>
+            <span class="d3 box play-x">Box 3</span>
+
+            <!-- Middle Row -->
+            <span class="d4 box play-o">Box 4</span>
+            <span class="d5 box play-o">Box 5</span>
+            <span class="d6 box play-o">Box 6</span>
+
+            <!-- Bottom Row -->
+            <span class="d7 box play-x">Box 7</span>
+            <span class="d8 box play-x">Box 8</span>
+            <span class="d9 box play-x">Box 9</span>
+        </div>
     </div>
 </body>
