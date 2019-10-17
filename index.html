@@ -13,31 +13,32 @@
         <div class="game-info">
             <!-- Game active player, rules and new game button -->
             <h2>Active Player:</h2>
-            <h3 id="player-X" class="active-player">Player X</h3>
-            <h3 id="player-O" class="active-player">Player O</h3>
+            <h3 id="player-x" class="active-player">Player X</h3>
+            <h3 id="player-o" class="active-player">Player O</h3>
 
             <h2>Rules:</h2>
             <p>Click a sqare to place your mark</p>
             <p>If you get 3 marks in a row you win the game!</p>
 
-            <button class="btn-new">New Game</button>
+            <button id="btn-new">New Game</button>
         </div>
 
         <div class="container">
             <!-- Top Row -->
-            <span class="d1 box play-x">Box 1</span>
-            <span class="d2 box play-x">Box 2</span>
-            <span class="d3 box play-x">Box 3</span>
+            <span id="d1" class="d1 box play-x" onclick="play(this)"></span>
+            <span id="d2" class="d2 box play-x" onclick="play(this)"></span>
+            <span id="d3" class="d3 box play-x" onclick="play(this)"></span>
 
             <!-- Middle Row -->
-            <span class="d4 box play-o">Box 4</span>
-            <span class="d5 box play-o">Box 5</span>
-            <span class="d6 box play-o">Box 6</span>
+            <span id="d4" class="d4 box play-o" onclick="play(this)"></span>
+            <span id="d5" class="d5 box play-o" onclick="play(this)"></span>
+            <span id="d6" class="d6 box play-o" onclick="play(this)"></span>
 
             <!-- Bottom Row -->
-            <span class="d7 box play-x">Box 7</span>
-            <span class="d8 box play-x">Box 8</span>
-            <span class="d9 box play-x">Box 9</span>
+            <span id="d7" class="d7 box play-x" onclick="play(this)"></span>
+            <span id="d8" class="d8 box play-x" onclick="play(this)"></span>
+            <span id="d9" class="d9 box play-x" onclick="play(this)"></span>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>

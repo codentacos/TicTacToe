@@ -32,7 +32,7 @@ h1 {
     text-align: center;
 }
 
-.btn-new {
+#btn-new {
     /* NEW GAME BUTTON */
     background: #4b63fd;
     border: 2px solid black;
@@ -41,7 +41,7 @@ h1 {
     padding: 0 15px;
 }
 
-.btn-new:hover {
+#btn-new:hover {
     background: rgba(23, 110, 161, 0.9);
 }
 
@@ -67,23 +67,17 @@ h1 {
     width: 100%;
 }
 
-/* .player-X,
-.player-O {
-    position: absolute; */
-/* } */
-
-
 .active-player {
-    background: crimson;
+    background: rgb(0, 191, 224);
     margin: auto;
     width: 250px;
 }
 
-#player-X {
+#player-x {
     /* display: none; */
 }
 
-#player-O {
+#player-o {
     display: none;
 }
 
