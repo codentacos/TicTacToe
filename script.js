@@ -8,15 +8,10 @@ let victory = false;
 
 init();
 
-// if (victory === true) {
-
-// }
-
 // Retreive clicked box target
 
 function play(elem) {
     let x = elem.id;
-    // win();
 
     console.log(elem.id);
 
@@ -32,7 +27,6 @@ function play(elem) {
             alert('Please select a different box.');
         }
     }
-    // nextPlayer();
     win();
 }
 
@@ -68,7 +62,6 @@ let win = function () {
         d2.contains('play-x') && d5.contains('play-x') && d8.contains('play-x') || d3.contains('play-x') && d6.contains('play-x') && d9.contains('play-x') ||
         d1.contains('play-x') && d5.contains('play-x') && d9.contains('play-x') || d7.contains('play-x') && d5.contains('play-x') && d3.contains('play-x')) {
         victory = true;
-        // alert('x wins');
         playerX.textContent = 'Player X wins!!!';
         playerX.style.background = 'crimson';
     } else if (d1.contains('play-o') && d2.contains('play-o') && d3.contains('play-o') || d4.contains('play-o') && d5.contains('play-o') && d6.contains('play-o') ||
@@ -76,7 +69,6 @@ let win = function () {
         d2.contains('play-o') && d5.contains('play-o') && d8.contains('play-o') || d3.contains('play-o') && d6.contains('play-o') && d9.contains('play-o') ||
         d1.contains('play-o') && d5.contains('play-o') && d9.contains('play-o') || d7.contains('play-o') && d5.contains('play-o') && d3.contains('play-o')) {
         victory = true;
-        // alert('o wins');
         playerO.textContent = 'Player O wins!!!';
         playerO.style.background = 'crimson';
     } else {
